@@ -1,6 +1,8 @@
 {
-  "name": "cocherapp2",
-  "version": "0.1.0",
+  "name": "wedding-croissant",
+  "version": "1.0.0",
+  "description": "go",
+  "main": "index.js",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
@@ -60,5 +62,7 @@
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.11.1"
-  }
+  },
+  "author": "",
+  "license": "ISC"
 }
