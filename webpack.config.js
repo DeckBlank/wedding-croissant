@@ -1,6 +1,7 @@
 const path = require(`path`);
 const HtmlWebpackPlugin = require(`html-webpack-plugin`);
 const ESLintPlugin = require(`eslint-webpack-plugin`);
+const Dotenv = require(`dotenv-webpack`);
 module.exports = {
   mode: `development`,
   entry: `./src/index.tsx`,
@@ -37,6 +38,30 @@ module.exports = {
         },
       },
       {
+        test: /\.(png|jpg)$/,
+        use:{
+          loader: `url-loader`,
+          options: {
+            // make loader to behave like url-loader, for all svg files
+            encoding: `base64`,
+          },
+        }
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg|jpeg)$/i, 
+        loader: `file-loader`,
+        /* options: {
+          publicPath: path.resolve(__dirname, `/public/images`),
+          outputPath: `public/images`,
+          name: `[name].[ext]`,
+          esModule: false
+        } */
+        options: {
+          name: `public/images/[name].[ext]`,
+          esModule: false
+        }
+      },
+      {
         test: /\.s[ac]ss$/i,
         use: [
           // Creates `style` nodes from JS strings
@@ -46,6 +71,9 @@ module.exports = {
           // Compiles Sass to CSS
           `sass-loader`,
         ],
+        /* options: {
+          data: `$baseUrl: ${process.env.BASE_URL};`
+        } */
       },
       {
         test: /\.css$/,
@@ -60,6 +88,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: `./public/index.html`,
     }),
-    new ESLintPlugin()
+    new ESLintPlugin(),
+    new Dotenv(),
   ],
 };

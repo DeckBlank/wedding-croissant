@@ -13,7 +13,7 @@ function App() {
     <LoadingLogo/>
   );
   const Home = lazy(() => import(`./Views/Home`));
-  const Croissant = lazy(() => import(`./Views/Croissant`));
+  const Croissant = lazy(() => import(`./Views/Croissant/Croissant`));
   const init = async () => {
     console.log(`init`);
   };
