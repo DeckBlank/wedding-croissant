@@ -9,7 +9,7 @@ const envelope = React.useRef(null)
 const button = React.useRef(null)
 const [flipped, setFlipped] = React.useState(false);
 
-const BASE_URL = process.env.BASE_URL;
+const BASE_URL = process.env.BASE_URL||`https://pizzabodas.uc.r.appspot.com`;
 
 const tl = gsap.timeline()
 
