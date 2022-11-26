@@ -48,7 +48,7 @@ module.exports = {
         }
       },
       {
-        test: /\.(jpe?g|png|gif|svg|jpeg)$/i, 
+        test: /\.(jpe?g|png|gif|svg|jpeg|webp)$/i, 
         loader: `file-loader`,
         /* options: {
           publicPath: path.resolve(__dirname, `/public/images`),

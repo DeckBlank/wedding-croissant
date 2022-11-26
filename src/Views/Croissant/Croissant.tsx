@@ -3,13 +3,13 @@ import { gsap } from "gsap";
 require(`../../cdn/TweenMax.min.js`)
 import "./Croissant.scss";
 require(`./0yLbYWbO.png`);
-require(`./r8US84pyqs0RO5rUCyJBp1Dg.png`);
+require(`./r8US84pyqs0RO5rUCyJBp1Dg.webp`);
 const Croissant = () => {
-  const envelope = React.useRef(null)
-  const button = React.useRef(null)
-  const [flipped, setFlipped] = React.useState(false);
+const envelope = React.useRef(null)
+const button = React.useRef(null)
+const [flipped, setFlipped] = React.useState(false);
 
-console.log(process.env.BASE_URL);
+const BASE_URL = process.env.BASE_URL;
 
 const tl = gsap.timeline()
 
@@ -78,7 +78,7 @@ function pullOut() {
         <div className="envelope" ref={envelope}>
           <div className="mask">
             <div className="card">
-              <div className="face front">
+              <div className="face front" style={{backgroundImage:`url(${BASE_URL}/public/images/r8US84pyqs0RO5rUCyJBp1Dg.webp)`}}>
                 <h1>
                   <img src={`front`} />
                   {/* <span className="extrude">Invitation Card</span> */}

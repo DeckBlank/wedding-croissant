@@ -2,7 +2,7 @@
 
 @import 'https://fonts.googleapis.com/css?family=Karla|Slackey|Sriracha';
 
-$host: "http://192.168.100.3:3000";
+/* $host: "http://192.168.100.3:3000"; */
 $WIDTH: 95vmin;
 $RATIO: 1.625;
 
@@ -138,8 +138,6 @@ body {
 }
 
 .front {
-  background-image: url("#{$host}/public/images/r8US84pyqs0RO5rUCyJBp1Dg.png");
-
   h1 {
     position: relative;
     font: normal 3em/0.9 $font-title;
