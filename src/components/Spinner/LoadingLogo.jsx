@@ -4,9 +4,8 @@ import "./_Spinner.scss";
 
 export const LoadingLogo = () => {
   return (
-    <div className="snippetPage" data-title=".dot-floating">
-      {/* <img className="spinner-logoMab" src={LogoMab} alt="Logo de MAB" /> */}
-      logo
+    <div className="snippet">
+      <div className="spinner-circle"></div>
     </div>
   );
 };

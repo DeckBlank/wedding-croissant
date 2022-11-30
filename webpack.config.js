@@ -1,7 +1,9 @@
 const path = require(`path`);
 const HtmlWebpackPlugin = require(`html-webpack-plugin`);
 const ESLintPlugin = require(`eslint-webpack-plugin`);
+const dotenv = require(`dotenv`) // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
 const Dotenv = require(`dotenv-webpack`);
+dotenv.config()
 module.exports = {
   mode: `development`,
   entry: `./src/index.tsx`,
@@ -69,7 +71,13 @@ module.exports = {
           // Translates CSS into CommonJS
           `css-loader`,
           // Compiles Sass to CSS
-          `sass-loader`,
+          {
+            loader: `sass-loader`,
+            options: {
+              
+              additionalData: `$baseUrl: "${process.env.BASE_URL}";`
+            },
+          },
         ],
         /* options: {
           data: `$baseUrl: ${process.env.BASE_URL};`
