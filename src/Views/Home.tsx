@@ -28,29 +28,17 @@ const Home = (props:any) => {
         <nav className={`main-nav ${openMenu ? menuOpened : ``}`}>
           <ul>
             <li>
-              <a href="/croissant">Nav 1</a>
-            </li>
-            <li>
-              <a href="">Nav 2</a>
-            </li>
-            <li>
-              <a href="">Nav 3</a>
-            </li>
-            <li>
-              <a href="">Nav 3</a>
+              <a href="/croissant">Kathy&Jose</a>
             </li>
           </ul>
         </nav>
         <article className="content">
-          <h1>Main article area</h1>
+          <h1>Lorem Ipsum</h1>
           <p>
-            In this layout, we display the areas in source order for any screen
-            less that 500 pixels wide. We go to a two column layout, and then to
-            a three column layout by redefining the grid, and the placement of
-            items on the grid.
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           </p>
         </article>
-        <footer className="main-footer">The footer</footer>
+        <footer className="main-footer">footer</footer>
     </>
   )
 }

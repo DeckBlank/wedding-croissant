@@ -27,7 +27,7 @@ $font-subtitle: 'Karla', sans-serif;
 body {
   /* background: radial-gradient(ellipse at center, #7db9e8 0%, #005da6 100%);
 	user-select: none; */
-  
+  /* background: var(--background); */
   perspective: 100px;
   margin: 0;
   height: 100vh;
