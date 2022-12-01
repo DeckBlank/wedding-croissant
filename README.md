@@ -1,46 +1,74 @@
-# Getting Started with Create React App
+<p align="center">
+  <a href="https://codely.com">
+    <img src="https://user-images.githubusercontent.com/10558907/170513882-a09eee57-7765-4ca4-b2dd-3c2e061fdad0.png" width="300px" height="92px" alt="Codely logo"/>
+  </a>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+  👋️ Create React App Codely template example
+</h1>
 
-## Available Scripts
+<p align="center">
+    <a href="https://github.com/${YOUR_ORG_SLUG}/${YOUR_REPO_SLUG}/actions/workflows/ci.yml"><img src="https://github.com/${YOUR_ORG_SLUG}/${YOUR_REPO_SLUG}/actions/workflows/ci.yml/badge.svg" alt="Build status"/></a>
+    <a href="https://github.com/CodelyTV"><img src="https://img.shields.io/badge/CodelyTV-OS-green.svg?style=flat-square" alt="Codely Open Source"/></a>
+    <a href="https://pro.codely.com"><img src="https://img.shields.io/badge/CodelyTV-PRO-black.svg?style=flat-square" alt="CodelyTV Courses"/></a>
+</p>
 
-In the project directory, you can run:
+<p align="center">
+  App created with the <a href="https://github.com/CodelyTV/cra-template-codely">🌱⚛️ Create React App Codely template</a> 
+  <br />
+  <br />
+  <a href="https://github.com/${YOUR_ORG_SLUG}/${YOUR_REPO_SLUG}/stargazers">Stars are welcome 😊</a>
+</p>
 
-### `npm start`
+## 🚀 Run the app
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- `npm install`: Install dependencies
+  Keep in mind that once you create your app based on the [🌱⚛️ Create React App Codely template](https://github.com/CodelyTV/cra-template-codely), CRA will install all the needed dependencies. However, if you modify the `package.json` manually, you can run this command as usual
+- `npm run dev`: Run in dev mode on [localhost:3000](http://localhost:3000)
+- `npm run build`: Generate production build
+- `npm run start`: Run generated content in `dist` folder on [localhost:3000](http://localhost:3000)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## ✅ Testing
 
-### `npm test`
+### Unit tests
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`npm run test`: Run unit tests with Jest and React Testing Library
 
-### `npm run build`
+### End-to-end tests
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `npm start`: Run in dev mode on [localhost:3000](http://localhost:3000)
+- Run end-to-end tests with Cypress choosing one of the following options:
+  - `npm run cy:open`: Open Cypress in dev mode
+  - `npm run cy:run`: Execute Cypress in CLI
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🔦 Linting
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `npm run lint`: Run linter
+- `npm run lint:fix`: Fix lint issues
 
-### `npm run eject`
+## 🌈 Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [TypeScript](https://www.typescriptlang.org)
+- [ESLint](https://eslint.org) and [Prettier](https://prettier.io) already configured with the [🤏 Codely's configuration](https://github.com/CodelyTV/eslint-config-codely)
+- [Jest](https://jestjs.io) with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro) for the unit tests
+- [Cypress](https://www.cypress.io) with [Testing Library](https://testing-library.com/docs/cypress-testing-library) for the end-to-end tests
+- [GitHub Action Workflows](https://github.com/features/actions) set up to run tests and linting on push
+- [Makefile](https://github.com/CodelyTV/cra-template-codely/blob/main/template/Makefile) for standardize how to run projects
+- [Sass](https://sass-lang.com) to supercharge CSS with nested classes and more fun
+- [.editorconfig](https://editorconfig.org) for sharing the IDE config
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 👌 Codely Code Quality Standards
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Publishing this package we are committing ourselves to the following code quality standards:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- 🤝 Respect **Semantic Versioning**: No breaking changes in patch or minor versions
+- 🤏 No surprises in transitive dependencies: Use the **bare minimum dependencies** needed to meet the purpose
+- 🎯 **One specific purpose** to meet without having to carry a bunch of unnecessary other utilities
+- ✅ **Tests** as documentation and usage examples
+- 📖 **Well documented ReadMe** showing how to install and use
+- ⚖️ **License favoring Open Source** and collaboration
 
-## Learn More
+## 🔀 Related information
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+This application was generated using the [🌱⚛️ Create React App Codely template](https://github.com/CodelyTV/cra-template-codely). Feel free to check it out and star the repo! 🌟😊🙌
