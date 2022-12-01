@@ -24,7 +24,9 @@ const Croissant = () => {
 	const base = window.screen.width > window.screen.height ? 0.7 : 0.95;
 	const tl = gsap.timeline();
 	/* hljs.registerLanguage(`javascript`, javascript); */
-	function pullOut() {
+	function pullOut(e:any) {
+    if(e.target.classList.contains('photo'))
+      return false;
 		if (envelope.current === null) {
 			return null;
 		}
