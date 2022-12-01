@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  App created with the <a href="https://github.com/CodelyTV/cra-template-codely">🌱⚛️ Create React App Codely template</a> 
+  App created with the <a href="https://github.com/CodelyTV/cra-template-codely">🌱Kathy&Jose</a> 
   <br />
   <br />
   <a href="https://github.com/${YOUR_ORG_SLUG}/${YOUR_REPO_SLUG}/stargazers">Stars are welcome 😊</a>
