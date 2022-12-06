@@ -16,7 +16,7 @@ require(`./4s.png`);
 
 const Croissant = () => {
 	const envelope = useRef<HTMLDivElement>(null);
-	const button = useRef<HTMLElement>(null);
+	const button = useRef<HTMLButtonElement>(null);
 	const [flipped, setFlipped] = useState(false);
 	const [firstEffect, setFirstEffect] = useState(false);
 	const [initEffect, setInittEffect] = useState(false);
@@ -99,8 +99,12 @@ const Croissant = () => {
 					y: `180px`,
 					ease: Circ.easeInOut,// eslint-disable-line
 					onComplete() {
-						/*  button.current.classList.toggle(`invert`);
-          button.current.textContent = `Enterate más!`; */
+						if (button != null) {
+							if (button.current != null) {
+						 button.current.classList.toggle(`invert`);
+          				button.current.textContent = `Quiero saber más!`;
+							}
+						}
 						setFirstEffect(true);
 					},
 				},
@@ -113,12 +117,12 @@ const Croissant = () => {
 				rotationY: ry,
 				ease: Power4.easeInOut,// eslint-disable-line
 				onComplete() {
-					if (button != null) {
+					/* if (button != null) {
 						if (button.current != null) {
 							button.current.classList.remove(`invert`);
 							button.current.textContent = `Ahi nos vemos!`;
 						}
-					}
+					} */
 				},
 			});
 		}
@@ -159,9 +163,9 @@ const Croissant = () => {
 				</div>
 			</div>
 			<div className="flap"></div>
-			{/*  <button style={{display:(flipped?`none`:`block`)}} className="button-action" ref={button}>
+			 <button style={{display:(flipped?`none`:`block`)}} className="button-action" ref={button}>
           Te invitamos!
-        </button> */}
+        </button>
 		</div>
 	);
 };

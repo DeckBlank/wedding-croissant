@@ -36,12 +36,12 @@ code {
 :root {
   --background: #E4D3CF;
   --text-primary: white;
-  --text-secondary: royalblue;
+  --text-secondary: black;
   --accent: purple;
 }
 [data-theme='dark'] {
   --background: #9E9D89;
   --text-primary: white;
-  --text-secondary: grey;
+  --text-secondary: white;
   --accent: darkred;
 }

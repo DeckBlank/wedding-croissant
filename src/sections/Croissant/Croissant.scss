@@ -1,7 +1,7 @@
 @use "sass:math";
 
 @import 'https://fonts.googleapis.com/css?family=Karla|Slackey|Sriracha';
-/* @import '../../index.scss'; */
+@import '../../index.scss';
 
 /* $host: "http://192.168.100.3:3000"; */
 $WIDTH: 85vmin;
@@ -89,7 +89,7 @@ body {
 
 .flap {
   border-right: $WIDTH*0.5 solid transparent;
-  border-top: math.div(($WIDTH*0.5), $RATIO) solid darken($color-envelope, 15%);
+  border-top: math.div(($WIDTH*0.52), $RATIO) solid darken($color-envelope, 15%);
   border-left: $WIDTH*0.5 solid transparent;
   position: absolute;
   left: 0;
@@ -224,8 +224,8 @@ button.button-action {
   font: normal 1em $font-copy;
   padding: 10px 25px;
   border-radius: 30px;
-  background: --background;
-  color: --text-primary;
+  background: var(--background);
+  color: var(--text-secondary);
   border: none;
   position: absolute;
   box-shadow: 0 1px 2px rgba(#000, 0.3);
@@ -240,7 +240,7 @@ button.button-action {
     color 0.3s ease-out;
 
   &.invert {
-    color: --text-primary;
+    color: var(--text-primary);
     background: darken($color-envelope, 15%);
   }
 }
@@ -261,7 +261,7 @@ button.button-action {
 	will-change: transform;
 
 	&:hover {
-		transform: translate(75%, 50%) scale(2.5) rotate(0deg);
+		transform: translate(75%, 75%) scale(2.5) rotate(0deg);
 		z-index: 1;
 
 		&:before {
